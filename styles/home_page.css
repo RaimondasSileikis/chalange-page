@@ -3,7 +3,7 @@
     height: 1385px;
     background: #EBEEF5;
     position: relative;
-    margin-left: calc(50% - 720px);
+    margin: 0 calc(50% - 720px);
     }
     
     .img-bg {    
