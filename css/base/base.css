@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+   
+    
+}
+
+
+.img-logo {
+    position: relative;
+    width: 68px;
+    height: 34px;
+    left: 16px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+
+.hr {
+    position: relative;
+    width: 68px;
+    height: 2px;
+    top: 60px;
+    border:none;
+    margin: auto;
+    background-color: #c4c4c4;
+    transition: max-width 0.4s ease-in 0s;
+   
+}
+
+.img-bg:hover hr {
+    width: 120px;
+    transition: max-width 0.4s ease-in 0s;
+   
+}
+
+.img-bg:hover .element-visible {
+    color:#02577A;
+    font-weight: bold;
+    visibility: visible;
+    transition: max-width 0.4s ease-in 0s;
+    
+}
+.element-visible {
+    visibility: hidden;
+   
+}
+.home {
+    position: relative;
+    display:flex;
+    text-decoration: none;
+    gap: 30px;
+    left: 15px;
+    top: 100px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.home:hover {
+    position: relative;
+    width: 191px;
+    line-height: 20px;
+    background-color:white;
+    border:none;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+    color:#02577A;
+    text-decoration: none;
+    font-weight: bold;  
+    transition: max-width 0.4s ease-in 0s;
+    
+}
+
+.calendar {
+    position: relative;
+    display:flex;
+    text-decoration: none;
+    gap: 30px;
+    left: 15px;
+    top: 130px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+
+.calendar:hover {
+    position: relative;
+    width: 191px;
+    line-height: 20px;
+    background-color:white;
+    border:none;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+    color:#02577A;
+    text-decoration: none;
+    font-weight: bold;  
+    transition: max-width 0.4s ease-in 0s;
+    
+}
+
+.fe {
+    position: relative;
+    display:flex;
+    text-decoration: none;
+    gap: 30px;
+    left: 15px;
+    top: 160px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.fe:hover {
+    position: relative;
+    width: 191px;
+    line-height: 20px;
+    background-color:white;
+    border:none;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+    color:#02577A;
+    text-decoration: none;
+    font-weight: bold;  
+    transition: max-width 0.4s ease-in 0s;
+    
+}
+
+.games {
+    position: relative;
+    display:flex;
+    text-decoration: none;
+    gap: 30px;
+    left: 8px;
+    top: 190px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.games:hover {
+    position: relative;
+    width: 198px;
+    line-height: 20px;
+    background-color:white;
+    border:none;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+    color:#02577A;
+    text-decoration: none;
+    font-weight: bold;  
+    transition: max-width 0.4s ease-in 0s;
+    
+}
+.buttom {
+width: 346px;
+position: relative;
+margin-left:calc(50% - 173px);
+text-align: center;
+bottom: 30px;
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+line-height: 13px;
+color: #02577A;  
+border-top: 1px solid #02577A;
+padding: 11px 0;
+
+}
