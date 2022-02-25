@@ -1,0 +1,206 @@
+/*base*/
+@import '../base/base.css';
+
+/* 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
+
+/*components*/
+
+/*CUSTOMS STYLE GOES BELOW THIS COMMENT LINE*/
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background:#EBEEF5;
+  
+}
+.img-bg {    
+    width: 100px;
+    height: 100vh;
+    left: 0px;
+    top: 0;
+    background: #F7F6FF;
+    transition: max-width 0.4s ease-in 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    position: absolute;
+}    
+.img-bg:hover {   
+    width: 206px;
+    height: 100vh;
+    background: #F7F6FF;
+    transition: max-width 0.4s ease-in 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 7;  
+    background-blend-mode: overlay;
+}
+.hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    background-color:#EBEEF5;
+    height: 100vh;
+    width:calc(100% - 100px);
+    margin-left: 100px;
+    min-width: 300px;
+}
+
+@media (max-width: 1199px) {
+    .hero {
+        flex-direction: column-reverse;
+        align-items:center;
+        justify-content:flex-end;
+        gap: 0;
+    }
+    .hero .bar {
+        padding: 10px 20px 10px 20px;
+    }
+    .hero .bars .calendars {
+        margin-top: 0;
+    }
+    .hero .bars .bar-php::before {
+        right: 0;
+    }
+}
+.hero .bars {
+    position: relative;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 40vw;
+    height: 40vw;
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 575px;
+    gap: 20px;
+    
+}
+.hero .bars .bar-php::before {
+    content: '+';
+    position: absolute;
+    left: 0;
+    bottom: -120px;
+    width: 70px;
+    height: 70px;
+    background-color:#02577A;
+    color: #FFF;
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+    border: transparent;
+    border-radius: 50%;  
+}
+
+.hero .bars .bar-php:hover::before {
+    background-color: #EBEEF5;
+    border: 1px solid #02577A;
+    color: #02577A;
+    
+}
+.hero .bar {
+    position: relative;
+    padding: 20px 40px 20px 40px;
+    background-color:#FFF;
+    border-radius: 20px;
+}
+.hero .bar h1 {
+    font-size: 26px;
+    line-height: 36px;
+}
+.hero .bar p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #C4C4C4;
+}
+.hero .bar::after {
+    position: absolute;
+    content: '...';
+    font-size: 30px;
+    top: 0px;
+    right: 40px;
+}
+.hero .bars .bar hr {
+    width: 200px;
+    height: 20px;
+    border: transparent;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.hero .bars .bar-scss hr {
+    background-color: #FC0000;
+}
+.hero .bars .bar-react hr {
+     background-color:#FCE300;
+ }
+ .hero .bars .bar-php hr {
+     background-color:#51FC00;
+ }
+.hero .calendars {
+    display: grid;
+    grid-template-rows: 3em 2em 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    padding: 10px;
+    width: 40vw;
+    height: 40vw;
+    min-width: 400px;
+    min-height: 430px;
+    max-width: 575px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5em;
+    background-color:#fff;
+    border:transparent;
+    border-radius: 25px;
+}
+.hero .calendars .month-indicators {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;   
+}
+.hero .calendars .date {
+    padding: 10px;
+    display: grid;
+    justify-content: space-around;
+    align-content: space-around;
+    grid-template-columns: repeat(7, 2em);
+    grid-template-rows: 2em 2em 2em 2em 2em 2em;
+}
+.hero .calendars .day-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-bottom: 5px;
+    margin-top: 1em;
+    text-align: center;
+    align-self: center;
+    color: #C4C4C4;
+    font-weight: 500;
+    border-bottom: 1px solid #C4C4C4;
+}
+.hero .calendars .date button:first-child {
+    grid-column: 6;
+}
+.hero .calendars .date button {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    
+}
+.hero .calendars .date button:hover {
+    outline:none;
+    background-color: #EBEEF5;
+    color: #02577A;
+    border: 1px solid #02577A;
+}
+    .hero .calendars .date button:active,
+    .hero .calendars .date button.is-selected,
+    .hero .calendars .date button:focus {
+    background-color: #02577A;
+    color: #fff;
+}
