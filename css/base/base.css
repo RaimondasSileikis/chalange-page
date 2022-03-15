@@ -10,11 +10,8 @@ body * {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-   
-    
+    font-family: 'Montserrat', sans-serif;  
 }
-
 
 .img-logo {
     position: relative;
@@ -40,21 +37,20 @@ body {
 .img-bg:hover hr {
     width: 120px;
     transition: max-width 0.4s ease-in 0s;
-   
 }
 
 .img-bg:hover .element-visible {
     color:#02577A;
     font-weight: bold;
     visibility: visible;
-    transition: max-width 0.4s ease-in 0s;
-    
+    transition: max-width 0.4s ease-in 0s; 
 }
+
 .element-visible {
     visibility: hidden;
-   
 }
-.home {
+
+.vector {
     position: relative;
     display:flex;
     text-decoration: none;
@@ -63,13 +59,15 @@ body {
     top: 100px;
     padding: 5px;
     padding-left: 20px;
-    padding-right: 20px;   
+    padding-right: 20px;
+    line-height: 50px;
+    filter: grayscale(100%) opacity(40%) contrast(50%);
 }
 
-.home:hover {
+.vector:hover {
     position: relative;
     width: 191px;
-    line-height: 20px;
+    line-height: 50px;
     background-color:white;
     border:none;
     border-bottom-left-radius: 19px;
@@ -77,90 +75,31 @@ body {
     color:#02577A;
     text-decoration: none;
     font-weight: bold;  
-    transition: max-width 0.4s ease-in 0s;   
+    transition: max-width 0.4s ease-in 0s; 
+    filter: none; 
+}
+
+.home {
+    top: 100px; 
 }
 
 .calendar {
-    position: relative;
-    display:flex;
-    text-decoration: none;
-    gap: 30px;
-    left: 15px;
     top: 130px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px; 
-}
-
-.calendar:hover {
-    position: relative;
-    width: 191px;
-    line-height: 20px;
-    background-color:white;
-    border:none;
-    border-bottom-left-radius: 19px;
-    border-top-left-radius: 19px;
-    color:#02577A;
-    text-decoration: none;
-    font-weight: bold;  
-    transition: max-width 0.4s ease-in 0s;  
 }
 
 .fe {
-    position: relative;
-    display:flex;
-    text-decoration: none;
-    gap: 30px;
-    left: 15px;
     top: 160px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px; 
 }
 
-.fe:hover {
-    position: relative;
-    width: 191px;
-    line-height: 20px;
-    background-color:white;
-    border:none;
-    border-bottom-left-radius: 19px;
-    border-top-left-radius: 19px;
-    color:#02577A;
-    text-decoration: none;
-    font-weight: bold;  
-    transition: max-width 0.4s ease-in 0s;   
-}
 .games {
-    position: relative;
-    display:flex;
-    text-decoration: none;
-    gap: 30px;
-    left: 8px;
     top: 190px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    
+    left:5px
 }
 
-.games:hover {
-    position: relative;
-    width: 198px;
-    line-height: 20px;
-    background-color:white;
-    border:none;
-    border-bottom-left-radius: 19px;
-    border-top-left-radius: 19px;
-    color:#02577A;
-    text-decoration: none;
-    font-weight: bold;  
-    transition: max-width 0.4s ease-in 0s;   
-}
 .buttom {
     width: 346px;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;

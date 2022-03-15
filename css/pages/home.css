@@ -8,16 +8,20 @@
 @import '../components/clock.css';
 /*CUSTOMS STYLE GOES BELOW THIS COMMENT LINE*/
 
+.home {
+    filter: none;
+}
 
-
-.content {
-    width: 100wv;
-    height: 906px;
-    background: #EBEEF5; 
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background:#EBEEF5;
+  
 }
 .img-bg {    
     width: 100px;
-    height: 906px;
+    height: 100vh;
     left: 0px;
     top: 0;
     background: #F7F6FF;
@@ -28,40 +32,47 @@
 }    
 .img-bg:hover {   
     width: 206px;
-    height: 906px;
+    height: 100vh;
     background: #F7F6FF;
     transition: max-width 0.4s ease-in 0s;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 7;  
     background-blend-mode: overlay;
 }
+
 .hello {
-   position: absolute;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    right: calc(10% - 30px);
-    top: 89px;
-    left: 150px;
+    gap: 50px;
+    padding-top: 50px;
     font-size: 36px;
     font-weight: 500;  
 }
+.hi {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .hello .rai {
     width: 341px;
     height: 80px;
   
 }
-.hello .timer {
+.hi .timer {
     width: 516px;
     height: 147px;
     border-radius: 25px;
     background-color: white;
 }
 .workplace {
-    position: absolute;
     width: 100vw;
     height: 35vh;
-    left: -106px;
+    left: 0px;
     top: 180px;
     background-color: #EBEEF5;
     background-image: url(../../img/workplace.png);
@@ -70,10 +81,10 @@
 }
 .citate {
     position: absolute;
-    top: 600px;
+    top: 700px;
     width: 70vw;
     height: 121px;
-    left: calc(10% - 50px);
+    
     border: 2px solid #02577A;
     border-radius: 25px;
     text-align: center;
@@ -82,23 +93,22 @@
     padding-top: 42px;  
 }
 
-@media (max-width:1000px) {
-    .hello {
+@media (max-width:1200px) {
+    .hi {
         flex-wrap: nowrap;
         flex-direction: column-reverse;
         top: 40px;
         gap: 30px;   
-        transition:gap 1s ease-in-out;
+        transition:gap 0.1s ease-in-out;
     }
-    .hello {
+    .hi {
         gap: 8px;
 }
-
-    .hello .timer {
+    .hi .timer {
         padding: 20px;
         width: 60vw; 
     }
-    .hello .rai {
+    .hi .rai {
         width: 60vw;
         height: 80px;
         font-size: 29px;
@@ -108,27 +118,11 @@
     .workplace {
         width: 100vw;
         height: 25vh;
-        left: -90px;
         top: 280px;
-        transition: width 1s ease-in-out;
+        transition: width 0.1s ease-in-out;
     }
 }
-@media (max-width: 576px) {
-    .content {
-         height: 817px;
-         transition: height 0.5s ease-in-out;
-    }
-    .img-bg {    
-        height: 817px;
-        transition: height 0.5s ease-in-out;
-    }
-    
 
-  
-    
-   
-
-}
 
 
 

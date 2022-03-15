@@ -8,6 +8,9 @@
 
 /*CUSTOMS STYLE GOES BELOW THIS COMMENT LINE*/
 
+.calendar {
+    filter: none;
+}
 .container {
     width: 100vw;
     height: 100vh;
@@ -59,8 +62,11 @@
     .hero .calendars {
         margin-top: 0;
     }
-    .hero .bars .bar-php::before {
-        right: 0;
+}
+@media (min-width: 1199px) {
+    
+    .container .hero .bars .bar-php::before {
+       left: calc(100% - 70px);
     }
 }
 
@@ -75,7 +81,7 @@
     min-width: 400px;
     min-height: 400px;
     gap: 20px;
-    
+    margin-bottom: 200px;
 }
 .hero .bars .bar-php::before {
     content: '+';
@@ -97,13 +103,14 @@
     background-color: #EBEEF5;
     border: 1px solid #02577A;
     color: #02577A;
-    
+    cursor: pointer;
 }
 .hero .bar {
     position: relative;
     padding: 20px 40px 20px 40px;
     background-color:#FFF;
     border-radius: 20px;
+    
 }
 .hero .bar h1 {
     font-size: 26px;
@@ -120,6 +127,10 @@
     font-size: 30px;
     top: 0px;
     right: 40px;
+}
+.hero .bar:hover::after {
+    color: #02577A;
+    cursor: pointer;
 }
 .hero .bars .bar hr {
     width: 200px;
@@ -153,12 +164,17 @@
     background-color:#fff;
     border:transparent;
     border-radius: 25px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 .hero .calendars .month-indicators {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 10px;   
+}
+.hero .calendars .month-indicators span:hover {
+    color: #02577A;
+    cursor: pointer;
 }
 .hero .calendars .date {
     padding: 10px;
@@ -196,6 +212,7 @@
     background-color: #EBEEF5;
     color: #02577A;
     border: 1px solid #02577A;
+    cursor: pointer;
 }
     .hero .calendars .date button:focus {
     background-color: #02577A;
