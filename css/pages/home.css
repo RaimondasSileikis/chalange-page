@@ -21,13 +21,16 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 20px;
     padding-left: 100px;
 }
 
 .content p {
     width: 341px;
     height: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
    
 }
 .hi .timer {
@@ -41,19 +44,18 @@
     width: 100vw;
     height: 35vh;
     left: 0px;
-    top: 180px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     background-color: #EBEEF5;
     background-image: url(../../img/workplace.png);
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .quote {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    left: calc(50% - calc(35vw - 50px));
-    top: 700px;
+    margin-left:calc(50% - (35vw - 50px));
     width: 70vw;
     height: 121px;
     border: 2px solid #02577A;
@@ -61,7 +63,7 @@
     text-align: center;
     font-size: 16px;
     line-height: 20px;
-    padding-top: 42px;  
+      padding: 5px;
 }
 
 @media (max-width:1200px) {
@@ -88,12 +90,12 @@
     }
     .photo {
         width: 100vw;
-        height: 35vh;
-        top: 260px;
+        height: 25vh;
+        
         transition: top 0.05s ease-in-out
     }
     .quote {
-        top: 790px;
+        
         transition:top 0.05s ease-in-out;
     }
 }

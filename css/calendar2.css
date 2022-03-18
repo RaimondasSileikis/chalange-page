@@ -1,8 +1,8 @@
 /*base*/
-@import '../base/base.css';
+@import './base/base.css';
 
 /* 3rd-party */
-@import '../3rd-party/font-awesome.min.css';
+@import './3rd-party/font-awesome.min.css';
 
 /*components*/
 
@@ -123,73 +123,105 @@
  .hero .bars .bar-php hr {
      background-color:#51FC00;
  }
-.hero .calendars {
-    display: grid;
-    grid-template-rows: 3em 2em 1fr;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    padding: 10px;
-    width: 35vw;
-    height: 35vw;
-    min-width: 400px;
-    min-height: 430px;
-    font-size: 24px;
+
+.containerC {
+    display: flex;
+    justify-content:center;
+    align-items: center;
     font-weight: 700;
-    line-height: 1.5em;
     background-color:#fff;
     border:transparent;
     border-radius: 25px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
-.hero .calendars .month-indicators {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;   
+
+.calendarC {
+    width:35rem;
+    height: 35rem;
+    background-color:  #fff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
-.hero .calendars .month-indicators span:hover {
-    color: #02577A;
+
+.month {
+    width: 100%;
+    height: 8rem;
+    background-color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.month i {
+    font-size: 1.5rem;
     cursor: pointer;
 }
-.hero .calendars .date {
-    padding: 10px;
-    display: grid;
-    justify-content: space-around;
-    align-content: space-around;
-    grid-template-columns: repeat(7, 2em);
-    grid-template-rows: 2em 2em 2em 2em 2em 2em;
+
+.month h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
 }
-.hero .calendars .day-of-week {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    padding-bottom: 5px;
-    margin-top: 1em;
-    text-align: center;
-    align-self: center;
-    color: #C4C4C4;
-    font-weight: 500;
+
+.month p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.weekdays {
+    width: 100%;
+    height: 2rem;
+    padding:  0 0.4rem;
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid #C4C4C4;
 }
-.hero .calendars .date button:first-child {
-    grid-column: 6;
+
+.weekdays div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(34.2rem / 7);
+    color: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
-.hero .calendars .date button {
-    position: relative;
-    font-size: 24px;
-    font-weight: 700;
-    border: 0;
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    padding: 0.2rem;
+}
+
+.days div {
+    font-size: 1rem;
+    margin: 0.3rem;
+    width: calc(30.2rem / 7);
+    height: calc(30.2rem / 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    background-color: transparent;
-    
+    transition: background-color 0.2s;
 }
-.hero .calendars .date button:hover {
-    outline:none;
+
+.prev-date,
+.next-date {
+    color: #C4C4C4;
+}
+.days div:hover:not(.today) {
     background-color: #EBEEF5;
     color: #02577A;
     border: 1px solid #02577A;
     cursor: pointer;
 }
-    .hero .calendars .date button:focus {
+.today {
     background-color: #02577A;
     color: #fff;
 }
