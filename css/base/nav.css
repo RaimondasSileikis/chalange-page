@@ -42,10 +42,19 @@
     transition: max-width 0.4s ease-in 0s;
 }
 .nav:hover .element-visible {
-    color: var(--collor-main);
+    color: var(--collor-shade);
     font-weight: bold;
     visibility: visible;
     transition: max-width 0.4s ease-in 0s; 
+}
+.nav-link img {
+    filter: var(--icon-filter-shade);
+}
+.nav-link:hover img{
+     filter: var(--icon-filter-main);
+}
+.nav-link:hover .element-visible {
+    color: var(--collor-main);
 }
 .element-visible {
     visibility: hidden;
@@ -74,7 +83,6 @@
     text-decoration: none;
     font-weight: bold;  
     transition: max-width 0.4s ease-in 0s; 
-    filter: none; 
 }
 .home-link {
     top: 100px; 

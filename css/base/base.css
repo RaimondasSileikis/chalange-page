@@ -7,6 +7,8 @@
     --collor-main: #02577A;
     --collor-shade: #C4C4C4;
     --collor-second: #fff;
+    --icon-filter-shade: invert(81%) sepia(0%) saturate(0%) hue-rotate(10deg) brightness(97%) contrast(94%);
+    --icon-filter-main: invert(21%) sepia(52%) saturate(2376%) hue-rotate(173deg) brightness(95%) contrast(98%);
     --collor-border-loading: conic-gradient(#E5E5E5, #02577A22, #02577A44, #02577A66, #02577A88, #02577Aaa, #02577Acc, #02577Aee,#02577Aff, #02577A);
 }
 :root.green {
@@ -15,6 +17,8 @@
     --collor-main: #3e7a02;
     --collor-shade: #c4c4c4;
     --collor-second: #fff;
+    --icon-filter-shade: invert(81%) sepia(0%) saturate(0%) hue-rotate(10deg) brightness(97%) contrast(94%);
+    --icon-filter-main: invert(38%) sepia(98%) saturate(4270%) hue-rotate(68deg) brightness(92%) contrast(98%);
     --collor-border-loading: conic-gradient(#E5E5E5, #3e7a0222, #3e7a0244, #3e7a0266, #3e7a0288, #3e7a02aa, #3e7a02cc, #3e7a02ee,#3e7a02ff, #3e7a02);
 }
 

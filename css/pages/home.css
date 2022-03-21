@@ -8,20 +8,32 @@
 @import '../components/clock.css';
 /*CUSTOMS STYLE GOES BELOW THIS COMMENT LINE*/
 
-.home-link {
-    
-    
+
+.nav:hover .home-link .element-visible {
+    color: var(--collor-main);
+}
+.home-link img{
+    filter: var(--icon-filter-main);
 }
 .content {
-    padding-top: 50px;
-    font-size: 36px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width:calc(100% - 100px);
+    margin-left: 100px;
+    min-width: 300px;
+    font-size: 2.3em;
     font-weight: 500;  
 }
-.hi {
+.content .hi {
+    position: absolute;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding-left: 100px;
+    justify-content: space-around;
+    top: 5%;
 }
 .content p {
     width: 341px;
@@ -38,29 +50,28 @@
     background-color: var(--collor-second);
 }
 .photo {
-    width: 100vw;
-    height: 35vh;
-    left: 0px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 35%;
     background-color: var(--collor-background);
     background-image: url(../../img/workplace.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size:cover; 
 }
 .quote {
+    position: absolute;
+    top:65%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left:calc(50% - (35vw - 50px));
     width: 70vw;
-    height: 121px;
+    height: 8em;
     border: 2px solid var(--collor-main);
     border-radius: 25px;
     text-align: center;
-    font-size: 16px;
+    font-size: 0.45em;
     line-height: 20px;
-    padding: 5px;
 }
 @media (max-width:1200px) {
     .hi {
@@ -83,15 +94,5 @@
         font-size: 29px;
         line-height: 35px;
         padding: 20px;
-    }
-    .photo {
-        width: 100vw;
-        height: 25vh;
-        
-        transition: top 0.05s ease-in-out
-    }
-    .quote {
-        
-        transition:top 0.05s ease-in-out;
     }
 }

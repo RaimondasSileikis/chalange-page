@@ -9,8 +9,11 @@
 
 /*CUSTOMS STYLE GOES BELOW THIS COMMENT LINE*/
 
-.fe-link {
-    filter: none;
+.nav:hover .fe-link .element-visible {
+    color: var(--collor-main);
+}
+.fe-link img{
+    filter: var(--icon-filter-main);
 }
 .hero {
     display: flex;
