@@ -1,130 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+:root,
+:root.blue {
+    --color-background: #EBEEF5;
+    --collor-nav:#F7F6FF;
+    --collor-main: #02577A;
+    --collor-shade: #C4C4C4;
+    --collor-second: #fff;
+    --collor-border-loading: conic-gradient(#E5E5E5, #02577A22, #02577A44, #02577A66, #02577A88, #02577Aaa, #02577Acc, #02577Aee,#02577Aff, #02577A);
+}
+:root.green {
+    --color-background: #eef5eb;
+    --collor-nav:#f6fffb;
+    --collor-main: #3e7a02;
+    --collor-shade: #c4c4c4;
+    --collor-second: #fff;
+    --collor-border-loading: conic-gradient(#E5E5E5, #3e7a0222, #3e7a0244, #3e7a0266, #3e7a0288, #3e7a02aa, #3e7a02cc, #3e7a02ee,#3e7a02ff, #3e7a02);
+}
 
 body,
 body * {
     margin: 0;
     padding: 0;
     vertical-align: top;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
 }
-
 body {
     font-family: 'Montserrat', sans-serif;  
 }
-
 .container {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background:#EBEEF5;
-  
+    background:var(--color-background);
 }
-.img-bg {    
-    width: 100px;
-    height: 100vh;
-    left: 0px;
-    top: 0;
-    background: #F7F6FF;
-    transition: max-width 0.4s ease-in 0s;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 100;
-    position: absolute;
-}    
-.img-bg:hover {   
-    width: 206px;
-    height: 100vh;
-    background: #F7F6FF;
-    transition: max-width 0.4s ease-in 0s;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 7;  
-    background-blend-mode: overlay;
-}
-
-
-.img-logo {
-    position: relative;
-    width: 68px;
-    height: 34px;
-    left: 16px;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);   
-}
-
-.hr {
-    position: relative;
-    width: 68px;
-    height: 2px;
-    top: 60px;
-    border:none;
-    margin: auto;
-    background-color: #c4c4c4;
-    transition: max-width 0.4s ease-in 0s; 
-}
-
-.img-bg:hover hr {
-    width: 120px;
-    transition: max-width 0.4s ease-in 0s;
-}
-
-.img-bg:hover .element-visible {
-    color:#02577A;
-    font-weight: bold;
-    visibility: visible;
-    transition: max-width 0.4s ease-in 0s; 
-}
-
-.element-visible {
-    visibility: hidden;
-}
-
-.vector {
-    position: relative;
-    display:flex;
-    text-decoration: none;
-    gap: 30px;
-    left: 15px;
-    top: 100px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 50px;
-    filter: grayscale(100%) opacity(40%) contrast(50%);
-}
-
-.vector:hover {
-    position: relative;
-    width: 191px;
-    line-height: 50px;
-    background-color:white;
-    border:none;
-    border-bottom-left-radius: 19px;
-    border-top-left-radius: 19px;
-    color:#02577A;
-    text-decoration: none;
-    font-weight: bold;  
-    transition: max-width 0.4s ease-in 0s; 
-    filter: none; 
-}
-
-.home {
-    top: 100px; 
-}
-
-.calendar {
-    top: 130px;
-}
-
-.fe {
-    top: 160px;
-}
-
-.games {
-    top: 190px;
-    left:5px
-}
-
 .buttom {
     width: 346px;
     position: absolute;
@@ -137,6 +46,6 @@ body {
     font-size: 11px;
     line-height: 13px;
     color: #02577A;  
-    border-top: 1px solid #02577A;
+    border-top: 1px solid var(--collor-main);
     padding: 11px 0;
 }

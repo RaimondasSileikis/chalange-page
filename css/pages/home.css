@@ -1,6 +1,6 @@
 /*base*/
 @import '../base/base.css';
-
+@import '../base/nav.css';
 
 /*3rd-party*/
 
@@ -8,10 +8,10 @@
 @import '../components/clock.css';
 /*CUSTOMS STYLE GOES BELOW THIS COMMENT LINE*/
 
-.home {
-    filter: none;
+.home-link {
+    
+    
 }
-
 .content {
     padding-top: 50px;
     font-size: 36px;
@@ -23,7 +23,6 @@
     justify-content: space-evenly;
     padding-left: 100px;
 }
-
 .content p {
     width: 341px;
     height: 80px;
@@ -31,14 +30,12 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-   
 }
 .hi .timer {
     width: 516px;
     height: 147px;
     border-radius: 25px;
-    background-color: white;
-    
+    background-color: var(--collor-second);
 }
 .photo {
     width: 100vw;
@@ -46,7 +43,7 @@
     left: 0px;
     margin-top: 50px;
     margin-bottom: 20px;
-    background-color: #EBEEF5;
+    background-color: var(--collor-background);
     background-image: url(../../img/workplace.png);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -58,14 +55,13 @@
     margin-left:calc(50% - (35vw - 50px));
     width: 70vw;
     height: 121px;
-    border: 2px solid #02577A;
+    border: 2px solid var(--collor-main);
     border-radius: 25px;
     text-align: center;
     font-size: 16px;
     line-height: 20px;
-      padding: 5px;
+    padding: 5px;
 }
-
 @media (max-width:1200px) {
     .hi {
         flex-wrap: nowrap;
@@ -99,9 +95,3 @@
         transition:top 0.05s ease-in-out;
     }
 }
-
-
-
-
-
-

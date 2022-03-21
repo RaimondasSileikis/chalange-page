@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    
+    <link rel="stylesheet" href="../css/pages/fe.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+    <main class="container">
+       
+        <nav class="nav">
+            <img class="nav-logo" src="../assets/logo.svg" alt="logo">
+            <hr class="hr">
+            <a class="nav-link home-link" href="../index.html">
+                <img src="../assets/home.svg" alt="home">
+                <span class="element-visible">Home</span>  
+            </a>
+            <a class="nav-link calendar-link" href="../calendar/index.html">
+                <img src="../assets/calendar.svg" alt="calendar">
+                <span class="element-visible">Calendar</span>
+            </a>
+            <a class="nav-link fe-link" href="../fe/index.html">
+                <img src="../assets/fe.svg" alt="fe">
+                <span class="element-visible">FE</span>
+            </a>
+            <a class="nav-link games-link" href="#">
+                <img src="../assets/games.svg" alt="games">
+                <span class="element-visible">Games</span>
+            </a>   
+        </nav>
+
+        <div class="hero">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate veritatis dolore laborum inventore minus tempora, sed rerum nemo eaque totam.</h3>
+            <div class="loading">loading</div>
+
+            <div class="tabs">
+                <div class="tab">
+                  <input type="radio" id="rad1" name="rd">
+                  <label class="tab-label" for="rad1"><i class="fa fa-long-arrow-up"></i>QUESTION ONE</label>
+                  <div class="tab-content">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa fuga ipsa maiores aliquam atque. Sequi modi vero dignissimos exercitationem quo.</p>
+                  </div>
+                </div>
+                <div class="tab">
+                    <input type="radio" id="rad2" name="rd">
+                    <label class="tab-label" for="rad2"><i class="fa fa-long-arrow-up"></i>QUESTION TWO</label>
+                    <div class="tab-content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa fuga ipsa maiores aliquam atque. Sequi modi vero dignissimos exercitationem quo.</p>
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <input type="radio" id="rad3" name="rd">
+                    <label class="tab-label" for="rad3"><i class="fa fa-long-arrow-up"></i>QUESTION THREE</label>
+                    <div class="tab-content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa fuga ipsa maiores aliquam atque. Sequi modi vero dignissimos exercitationem quo.</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-long-arrow-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem deserunt maxime voluptate odio veritatis asperiores ullam, officiis consectetur! Corporis!</p>
+                <i class="fa fa-long-arrow-right"></i>
+            </div>
+
+            <div class="selector">
+                <button id="blue" class="theme-btn blue" title="Blue theme">Select THEME</button>
+                <button id="green" class="theme-btn green" title="Green theme">Select THEME</button>
+            </div>
+        </div>
+
+        <footer class="buttom">
+            <span>&#169 Baltic Institute of Technology</span>
+        </footer>
+    </main>
+    <script src="../js/theme.js"></script>
+    
+</body>
+</html>

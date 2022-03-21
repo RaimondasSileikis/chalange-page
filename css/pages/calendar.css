@@ -1,5 +1,6 @@
 /*base*/
 @import '../base/base.css';
+@import '../base/nav.css';
 
 /* 3rd-party */
 @import '../3rd-party/font-awesome.min.css';
@@ -8,111 +9,87 @@
 
 /*CUSTOMS STYLE GOES BELOW THIS COMMENT LINE*/
 
-.calendar {
+.calendar-link {
     filter: none;
 }
-
 .hero {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 50px;
-    background-color:#EBEEF5;
+    flex-direction: column-reverse;
+    gap: 40px;
+    background-color:var(--collor-background);
     height: 100vh;
     width:calc(100% - 100px);
     margin-left: 100px;
-    min-width: 300px;
+    padding-top: 40px;
+    align-items:center;
+    justify-content:flex-end;
 } 
-
-@media (max-width: 1199px) {
-    .hero {
-        flex-direction: column-reverse;
-        align-items:center;
-        justify-content:flex-end;
-        gap: 0;
-    }
-    .hero .bar {
-        padding: 10px 20px 10px 20px;
-    }
-    .hero .calendars {
-        margin-top: 0;
-    }
-}
-@media (min-width: 1199px) {
-    
-    .container .hero .bars .bar-php::before {
-       left: calc(100% - 70px);
-    }
-}
-
-.hero .bars {
+.bars {
     position: relative;
-    margin-top: 50px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    width: 35vw;
-    height: 35vw;
-    min-width: 400px;
-    min-height: 400px;
-    gap: 20px;
-    margin-bottom: 200px;
+    font-size: 1.4vw;
+    width: 38em;
+    height: auto;
+    gap: 30px;
 }
-.hero .bars .bar-php::before {
+.hero .bars .btn {
     content: '+';
     position: absolute;
-    left: 0;
-    bottom: -120px;
-    width: 70px;
-    height: 70px;
-    background-color:#02577A;
-    color: #FFF;
-    font-size: 50px;
+    right: 0;
+    bottom: -2.5em;
+    width: 1.6em;
+    height: 1.6em;
+    background-color:var(--collor-main);
+    color: var(--collor-second);
+    font-size: 3.5em;
     text-align: center;
-    line-height: 70px;
+    line-height: 1.6em;
     border: transparent;
     border-radius: 50%;  
 }
-
-.hero .bars .bar-php:hover::before {
-    background-color: #EBEEF5;
-    border: 1px solid #02577A;
-    color: #02577A;
+.hero .bars .btn:hover {
+    background-color: var(--collor-background);
+    border: 1px solid var(--collor-main);
+    color: var(--collor-main);
     cursor: pointer;
 }
 .hero .bar {
     position: relative;
-    padding: 20px 40px 20px 40px;
-    background-color:#FFF;
-    border-radius: 20px;
-    
+    background-color:var(--collor-second);
+    border-radius: 2em;
+    display: grid;
+    grid-template-rows: 3em 2em 1.5em;
+    align-content: space-between;
+    padding: 0.7em 2.5em 0.7em 2.5em;
+    align-items: center;  
 }
 .hero .bar h1 {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 2em;
+    line-height: 2em;
 }
 .hero .bar p {
-    font-size: 20px;
-    line-height: 32px;
-    color: #C4C4C4;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: var(--collor-shade);
 }
-.hero .bar::after {
+.hero .bar i {
     position: absolute;
-    content: '...';
-    font-size: 30px;
-    top: 0px;
-    right: 40px;
+    top: 0.5em;
+    right: 2em;
+    font-size: 1.8em;
+   
 }
-.hero .bar:hover::after {
-    color: #02577A;
+.hero .bar i:hover {
+    color: var(--collor-main);
     cursor: pointer;
 }
 .hero .bars .bar hr {
-    width: 200px;
-    height: 20px;
+    width: 15em;
+    height: 1.1em;
     border: transparent;
-    border-radius: 25px;
-    margin-top: 10px;
+    border-radius: 1.8em;  
 }
 .hero .bars .bar-scss hr {
     background-color: #FC0000;
@@ -123,73 +100,128 @@
  .hero .bars .bar-php hr {
      background-color:#51FC00;
  }
-.hero .calendars {
-    display: grid;
-    grid-template-rows: 3em 2em 1fr;
-    grid-template-columns: 1fr;
-    margin-top: 50px;
-    padding: 10px;
-    width: 35vw;
-    height: 35vw;
-    min-width: 400px;
-    min-height: 430px;
-    font-size: 24px;
+.cont {
+    display: flex;
+    justify-content:center;
+    align-items: center;
     font-weight: 700;
-    line-height: 1.5em;
-    background-color:#fff;
+}
+.calendars {
+    font-size: 1.4vw;
+    padding: 3em 4em 0 4em;
+    width: 38em;
+    height: 40em;
+    background-color:  var(--collor-second);
     border:transparent;
-    border-radius: 25px;
+    border-radius: 2em;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
-.hero .calendars .month-indicators {
+@media (min-width: 991px) {
+    .calendars,
+    .hero .bars {
+        font-size: 1vw;
+        height: 40em;
+    }
+    .hero {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center; 
+    }
+    .hero .bar {
+        padding: 1.5em 3em 1.5em 3em;
+        align-items: start;
+    }
+    .hero .bar h1 {
+        display: grid;
+        align-self: end;
+    }
+    .hero .bars .btn {
+        left: 0;
+    }
+    .hero .bars .bar hr {
+        height: 1.5em;
+    }
+    .hero .bar i {
+        top: 1.2em;
+    }
+}
+.month {
+    width: 100%;
+    height: 5em;
+    background-color:var(--collor-second);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 4em;
+    text-align: center;
+    border:transparent; 
+}
+.month i {
+    font-size: 2em;
+    cursor: pointer;
+}
+.month i:hover {
+    color: #02577A;
+}
+.month h1 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 100%; 
+}
+.month p {
+    font-size: 2em;
+    font-weight: 400;
+}
+.weekdays {
+    width: 100%;
+    height: 4em;
+    padding-bottom: 1em;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px;   
+    border-bottom: 1px solid var(--collor-shade);
 }
-.hero .calendars .month-indicators span:hover {
-    color: #02577A;
-    cursor: pointer;
+.weekdays div {
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    width: calc(100% / 7);
+    color: var(--collor-shade);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
-.hero .calendars .date {
-    padding: 10px;
-    display: grid;
-    justify-content: space-around;
-    align-content: space-around;
-    grid-template-columns: repeat(7, 2em);
-    grid-template-rows: 2em 2em 2em 2em 2em 2em;
+.days {
+    width: 100%;
+    height:calc(100% - 11em);
+    display: flex;
+    flex-wrap:wrap;
+    padding-top: 1em;
+    justify-content: space-between;
+    align-content: flex-start;
 }
-.hero .calendars .day-of-week {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    padding-bottom: 5px;
-    margin-top: 1em;
-    text-align: center;
-    align-self: center;
-    color: #C4C4C4;
-    font-weight: 500;
-    border-bottom: 1px solid #C4C4C4;
-}
-.hero .calendars .date button:first-child {
-    grid-column: 6;
-}
-.hero .calendars .date button {
-    position: relative;
-    font-size: 24px;
-    font-weight: 700;
-    border: 0;
+.days div {
+    font-size: 1.5em;
+    font-weight: 800;
+    width: calc(100% / 7);
+    height: calc(100%  / 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    background-color: transparent;
-    
+    transition: background-color 0.2s; 
 }
-.hero .calendars .date button:hover {
-    outline:none;
-    background-color: #EBEEF5;
-    color: #02577A;
-    border: 1px solid #02577A;
+.prev-date,
+.next-date {
+    color: var(--collor-shade);
+}
+.days div:hover:not(.today) {
+    background-color: var(--collor-background);
+    color: var(--collor-main);
+    border: 1px solid var(--collor-main);
     cursor: pointer;
 }
-    .hero .calendars .date button:focus {
-    background-color: #02577A;
-    color: #fff;
+.today {
+    background-color: var(--collor-main);
+    color: var(--collor-second);
 }

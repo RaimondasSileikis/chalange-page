@@ -1,0 +1,91 @@
+.nav {    
+    width: 100px;
+    height: 100vh;
+    left: 0px;
+    top: 0;
+    background: var(--collor-nav);
+    transition: max-width 0.4s ease-in 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    position: absolute;
+}    
+.nav:hover {   
+    width: 206px;
+    height: 100vh;
+    background: var(--collor-nav);
+    transition: max-width 0.4s ease-in 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 7;  
+    background-blend-mode: overlay;
+}
+.nav-logo {
+    position: relative;
+    width: 68px;
+    height: 34px;
+    left: 16px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+.hr {
+    position: relative;
+    width: 68px;
+    height: 2px;
+    top: 60px;
+    border:none;
+    margin: auto;
+    background-color: var(--collor-shade);
+    transition: max-width 0.4s ease-in 0s; 
+}
+.nav:hover hr {
+    width: 120px;
+    transition: max-width 0.4s ease-in 0s;
+}
+.nav:hover .element-visible {
+    color: var(--collor-main);
+    font-weight: bold;
+    visibility: visible;
+    transition: max-width 0.4s ease-in 0s; 
+}
+.element-visible {
+    visibility: hidden;
+}
+.nav-link {
+    position: relative;
+    display:flex;
+    text-decoration: none;
+    gap: 30px;
+    left: 15px;
+    top: 100px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+}
+.nav-link:hover {
+    position: relative;
+    width: 191px;
+    line-height: 50px;
+    background-color:var(--collor-second);
+    border:none;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+    color:var(--collor-main);
+    text-decoration: none;
+    font-weight: bold;  
+    transition: max-width 0.4s ease-in 0s; 
+    filter: none; 
+}
+.home-link {
+    top: 100px; 
+}
+.calendar-link {
+    top: 130px;
+}
+.fe-link {
+    top: 160px;
+}
+.games-link {
+    top: 190px;
+    left:5px
+}
