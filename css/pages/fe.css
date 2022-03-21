@@ -28,7 +28,7 @@
 }
 .hero h3 {
     width: 70%;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
 }
 .loading {
@@ -37,9 +37,9 @@
     align-items:center;
     justify-content: center; 
     overflow: hidden;
-    width: 5em;
-    height: 5em;
-    font-size: 1em;
+    width: 4em;
+    height: 4em;
+    font-size: 0.8em;
     font-weight: 500;
     padding: 3.2em;
     border-radius: 50%;
@@ -93,7 +93,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 1em 1em 1em 4em;
+    padding: 0.8em 0.8em 0.8em 3em;
     background: var(--collor-main);
 }
 .tab-label:hover {
@@ -105,15 +105,15 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    width: 1.6em;
-    height: 1.6em;
-    font-size: 1.5em;
+    width: 1.4em;
+    height: 1.4em;
+    font-size: 1.2em;
     background-color: var(--collor-second);
     cursor: pointer;
     text-align: center;
     transition: all 0.05s;
     color: var(--collor-main);
-    margin-right: 2em;
+    margin-right: 1.4em;
 }
 .tab-content {
     max-height: 0;
@@ -134,7 +134,7 @@ input:checked + .tab-label i {
 }
 input:checked ~ .tab-content {
     max-height: 100vh;
-    padding: 2em;
+    padding: 1.5em;
 }
 .hero .box {
     display: flex;
@@ -143,17 +143,17 @@ input:checked ~ .tab-content {
     width: 100%;
     height: auto;
     background-color: var(--collor-second);
-    padding: 3em;
+    padding: 2em;
 }
 .hero .box i {
     color: var(--collor-main);
-    width: 4em;
-    font-size: 1.5em;
+    width: 3em;
+    font-size: 1.2em;
     text-align: center;
 }
 .hero .box p {
     width: 40%;
-    padding: 2em 3em 2em 3em;
+    padding: 1.5em 2em 1.5em 2em;
     background-color: transparent;
     border: 2px solid var(--collor-main);
     border-radius: 25px;  
@@ -167,8 +167,8 @@ input:checked ~ .tab-content {
     cursor: pointer;
 }
 .theme-btn {
-    font-size: 1em;
-    padding: 0.6em;
+    font-size: 0.8em;
+    padding: 0.5em;
     cursor: pointer;
     border: none;
     background-color: transparent;

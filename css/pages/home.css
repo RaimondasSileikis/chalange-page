@@ -36,16 +36,16 @@
     top: 5%;
 }
 .content p {
-    width: 341px;
-    height: 80px;
+    width: 13em;
+    height: 4em;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 .hi .timer {
-    width: 516px;
-    height: 147px;
+    width: 13em;
+    height: 4em;
     border-radius: 25px;
     background-color: var(--collor-second);
 }
@@ -82,17 +82,18 @@
         transition:gap 0.05s ease-in-out;
     }
     .hi {
-        gap: 8px;
+        gap: 1em;
 }
     .hi .timer {
-        padding: 20px;
+        padding: 0.5em;
         width: 60vw; 
+        height: 3em;
     }
     .hi p {
         width: 60vw;
-        height: 80px;
-        font-size: 29px;
-        line-height: 35px;
-        padding: 20px;
+        height: 2em;
+        font-size: 0.8em;
+        line-height: 0.9em;
+        padding: 1em;
     }
 }
