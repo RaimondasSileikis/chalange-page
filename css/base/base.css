@@ -7,6 +7,7 @@
     --collor-main: #02577A;
     --collor-shade: #C4C4C4;
     --collor-second: #fff;
+    --collor-main-font:#000;
     --icon-filter-shade: invert(81%) sepia(0%) saturate(0%) hue-rotate(10deg) brightness(97%) contrast(94%);
     --icon-filter-main: invert(21%) sepia(52%) saturate(2376%) hue-rotate(173deg) brightness(95%) contrast(98%);
     --collor-border-loading: conic-gradient(#E5E5E5, #02577A22, #02577A44, #02577A66, #02577A88, #02577Aaa, #02577Acc, #02577Aee,#02577Aff, #02577A);
@@ -17,11 +18,35 @@
     --collor-main: #3e7a02;
     --collor-shade: #c4c4c4;
     --collor-second: #fff;
+    --collor-main-font:#000;
     --icon-filter-shade: invert(81%) sepia(0%) saturate(0%) hue-rotate(10deg) brightness(97%) contrast(94%);
     --icon-filter-main: invert(38%) sepia(98%) saturate(4270%) hue-rotate(68deg) brightness(92%) contrast(98%);
     --collor-border-loading: conic-gradient(#E5E5E5, #3e7a0222, #3e7a0244, #3e7a0266, #3e7a0288, #3e7a02aa, #3e7a02cc, #3e7a02ee,#3e7a02ff, #3e7a02);
 }
 
+:root.flowers {
+    --color-background: #f1ebf5;
+    --collor-nav:#fcf6ff;
+    --collor-main: #4c027a;
+    --collor-shade: #c4c4c4;
+    --collor-second: #fff;
+    --collor-main-font:#000;
+    --icon-filter-shade: invert(81%) sepia(0%) saturate(0%) hue-rotate(10deg) brightness(97%) contrast(94%);
+    --icon-filter-main: invert(14%) sepia(79%) saturate(3732%) hue-rotate(272deg) brightness(68%) contrast(116%);
+    --collor-border-loading: conic-gradient(#E5E5E5, #4c027a22, #4c027a44, #4c027a66, #4c027a88, #4c027aaa, #4c027acc, #4c027aee,#4c027aff, #4c027a);
+}
+
+:root.sachara {
+    --color-background: #f5f5eb;
+    --collor-nav:#fffff6;
+    --collor-main: #b1a200;
+    --collor-shade: #C4C4C4;
+    --collor-second: #fff;
+    --collor-main-font:#000;
+    --icon-filter-shade: invert(81%) sepia(0%) saturate(0%) hue-rotate(10deg) brightness(97%) contrast(94%);
+    --icon-filter-main: invert(75%) sepia(63%) saturate(4884%) hue-rotate(24deg) brightness(95%) contrast(105%);
+    --collor-border-loading: conic-gradient(#E5E5E5, #b1a20022, #b1a20044, #b1a200, #b1a20088, #b1a200aa, #b1a200cc, #b1a200ee,#b1a200ff, #b1a200);
+}
 body,
 body * {
     margin: 0;

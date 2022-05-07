@@ -62,15 +62,60 @@
             </div>
 
             <div class="box">
-                <i class="fa fa-long-arrow-left"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem deserunt maxime voluptate odio veritatis asperiores ullam, officiis consectetur! Corporis!</p>
-                <i class="fa fa-long-arrow-right"></i>
+                <div class="slider">
+                    <div class="slides">
+                      <div id="slides__1" class="slide">
+                        <p class="slide__text">
+                           1.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem deserunt maxime voluptate odio!
+                        </p>
+                        <a class="slide__prev" href="#slides__4" title="Next"> <i class="fa fa-long-arrow-left"></i></a>
+                        <a class="slide__next" href="#slides__2" title="Next"><i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                      <div id="slides__2" class="slide">
+                        <p class="slide__text">
+                            2.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem deserunt maxime voluptate odio!
+                        </p>
+                        <a class="slide__prev" href="#slides__1" title="Prev"><i class="fa fa-long-arrow-left"></i></a>
+                        <a class="slide__next" href="#slides__3" title="Next"><i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                      <div id="slides__3" class="slide">
+                        <p class="slide__text">
+                            3.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem deserunt maxime voluptate odio!
+                        </p>
+                        <a class="slide__prev" href="#slides__2" title="Prev"><i class="fa fa-long-arrow-left"></i></a>
+                        <a class="slide__next" href="#slides__4" title="Next"><i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                      <div id="slides__4" class="slide">
+                        <p class="slide__text">
+                            4.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem deserunt maxime voluptate odio!
+                        </p>
+                        <a class="slide__prev" href="#slides__3" title="Prev"><i class="fa fa-long-arrow-left"></i></a>
+                        <a class="slide__next" href="#slides__1" title="Prev"><i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="selector">
-                <button id="blue" class="theme-btn blue" title="Blue theme">Select THEME</button>
-                <button id="green" class="theme-btn green" title="Green theme">Select THEME</button>
+
+            <div class="tab-selector">
+                <input type="radio" id="tab-1" name="tab-group-1" />
+                <label for="tab-1">Select THEME </label>
+            <div class="tab close-tab">
+                <input type="radio" id="tab-close" name="tab-group-1" />
+                <label for="tab-close">Select THEME </label>
             </div>
+            
+                <div class="content-theme">
+                  <ul>
+                    <button id="blue" class="theme-btn blue" title="Sky theme">SKY THEME</button>
+                    <button id="green" class="theme-btn green" title="Forest theme">Forest THEME</button>
+                    <button id="flowers" class="theme-btn flowers" title="Flowers theme">Flowers THEME</button>
+                    <button id="sachara" class="theme-btn sachara" title="Sachara theme">Sachara THEME</button>
+                  </ul>
+                </div>
+            </div>
+           
+
         </div>
 
         <footer class="buttom">

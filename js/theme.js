@@ -7,6 +7,8 @@ if (themeCollor === null) {
 document.documentElement.className = themeCollor;
 const btnBlue = document.getElementById('blue');
 const btnGreen = document.getElementById('green');
+const btnFlowers = document.getElementById('flowers');
+const btnSachara = document.getElementById('sachara');
 
 btnBlue.addEventListener('click', () => {
     document.documentElement.className = 'blue';
@@ -15,4 +17,13 @@ btnBlue.addEventListener('click', () => {
 btnGreen.addEventListener('click', () => {
     document.documentElement.className = 'green';
     localStorage.setItem('collor', 'green')
+    });
+
+btnFlowers.addEventListener('click', () => {
+     document.documentElement.className = 'flowers';
+    localStorage.setItem('collor', 'flowers')
+    });
+btnSachara.addEventListener('click', () => {
+     document.documentElement.className = 'sachara';
+    localStorage.setItem('collor', 'sachara')
     });
